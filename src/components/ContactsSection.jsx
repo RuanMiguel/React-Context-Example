@@ -1,5 +1,5 @@
 import ContactsList from "./ContactsList";
-import { ThemeSwitcher } from "../ThemeSwitcher";
+import { ThemeSwitcher } from "./ThemeSwitch";
 
 function ContactsSection() {
   return (

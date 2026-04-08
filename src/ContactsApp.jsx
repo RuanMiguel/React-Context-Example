@@ -1,8 +1,8 @@
 import { useContext } from "react";
-import { ThemeContext } from "./ThemeContext";
-import { ThemeArea } from "./ThemeContext";
+import { ThemeContext } from "./context/ThemeContext";
 import ContactsSection from "./components/ContactsSection";
-import { ThemeSwitcher } from "./ThemeSwitcher";
+import { ThemeSwitcher } from "./components/ThemeSwitch";
+import { ThemeArea } from "./context/ThemeContext";
 
 function App() {
   const { theme } = useContext(ThemeContext);
