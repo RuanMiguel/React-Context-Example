@@ -1,7 +1,12 @@
-import { createRoot } from 'react-dom/client';
-import App from './ContactsApp';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App";
+import { ThemeArea } from "./ThemeContext";
 
-const container = document.getElementById('root');
-const root = createRoot(container);
+const root = ReactDOM.createRoot(document.getElementById("root"));
 
-root.render(<App />);
+root.render(
+  <ThemeArea initialTheme="light">
+    <App />
+  </ThemeArea>
+);

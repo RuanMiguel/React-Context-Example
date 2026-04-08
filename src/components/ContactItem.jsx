@@ -1,9 +1,15 @@
-export const ContactItem = ({ name, theme }) => {
-  let currentLocation = null;
+import { useContext } from "react";
+import { ThemeContext } from "../ThemeContext";
+
+function ContactItem({ contact }) {
+  const { theme } = useContext(ThemeContext);
 
   return (
-    <div>
-      {name}
+    <div className={`contact-item theme-${theme}`}>
+      <h3>{contact.name}</h3>
+      <p>{contact.email}</p>
     </div>
   );
-};
+}
+
+export default ContactItem;

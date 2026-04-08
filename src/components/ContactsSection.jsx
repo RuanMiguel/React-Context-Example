@@ -1,11 +1,16 @@
-import { ContactsList } from './ContactsList';
+import ContactsList from "./ContactsList";
+import { ThemeSwitcher } from "../ThemeSwitcher";
 
-export const ContactsSection = ({ contacts, name, theme }) => {
+function ContactsSection() {
   return (
-    <div>
-      <h2>{name}</h2>
-      <ContactsList contacts={contacts} theme={theme} />
-    </div>
-  );
-};
+    <section>
+      <h2>Contacts</h2>
 
+      <ThemeSwitcher />
+
+      <ContactsList />
+    </section>
+  );
+}
+
+export default ContactsSection;
